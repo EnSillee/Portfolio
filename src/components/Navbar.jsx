@@ -5,6 +5,7 @@ import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {DiTravis} from 'react-icons/di'
 import Logo from '../assets/logo2.png';
 import Resume from '../assets/resume.pdf';
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
   const [isToggleOn, setIsToggleOn] = useState(false);
@@ -19,18 +20,18 @@ const Navbar = () => {
 
       {/* menu */}
       <ul className="hidden md:flex">
-        <li className='text-xl'>Home</li>
-        <li className='text-xl'>About</li>
-        <li className='text-xl'>Skills</li>
-        <li className='text-xl'>Projects</li>
-        <li className='text-xl'>Contact</li>
+        <Link smooth={true} duration={500} to='home' className=' px-4 text-xl cursor-pointer'>Home</Link>
+        <Link smooth={true} duration={500} to='about' className=' px-4 text-xl cursor-pointer'>About</Link>
+        <Link smooth={true} duration={500} to='skills' className=' px-4 text-xl cursor-pointer'>Skills</Link>
+        <Link smooth={true} duration={500} to='projects' className=' px-4 text-xl cursor-pointer'>Projects</Link>
+        <Link smooth={true} duration={500} to='contact' className=' px-4 text-xl cursor-pointer'>Contact</Link>
       </ul>
 
       {/* Hamburger */}
       <div 
       onClick={handleClick}
       className="md:hidden z-10">
-        {isToggleOn? <FaTimes /> : <FaBars />}
+        {isToggleOn? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {/* Mobile menu */}
