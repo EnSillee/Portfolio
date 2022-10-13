@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes, FaGithub, FaFacebook } from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub } from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {DiTravis} from 'react-icons/di'
 import Logo from '../assets/logo2.png';
+import Resume from '../assets/resume.pdf';
 
 const Navbar = () => {
   const [isToggleOn, setIsToggleOn] = useState(false);
@@ -18,11 +19,11 @@ const Navbar = () => {
 
       {/* menu */}
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li className='text-xl'>Home</li>
+        <li className='text-xl'>About</li>
+        <li className='text-xl'>Skills</li>
+        <li className='text-xl'>Projects</li>
+        <li className='text-xl'>Contact</li>
       </ul>
 
       {/* Hamburger */}
@@ -60,7 +61,7 @@ const Navbar = () => {
                 </a>
             </li>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-                <a className='flex justify-between items-center w-full'  href='https://engelsmile.tistory.com/' target="_blank" rel='noopenner noreferrer'>
+                <a className='flex justify-between items-center w-full' href={Resume} target="_blank" rel='noopenner noreferrer'>
                     Resume <BsFillPersonLinesFill size={30} />
                 </a>
             </li>
