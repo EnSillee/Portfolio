@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaBars, FaTimes, FaGithub } from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
@@ -7,10 +7,7 @@ import Logo from '../assets/logo2.png';
 import Resume from '../assets/resume.pdf';
 import {Link} from 'react-scroll'
 
-const Navbar = () => {
-  const [isToggleOn, setIsToggleOn] = useState(false);
-
-  const handleClick = () => setIsToggleOn(!isToggleOn)
+const Navbar = ({isToggleOn, handleClick}) => {
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#B3A783] text-white">
@@ -36,11 +33,11 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <ul className={isToggleOn? 'absolute top-0 left-0 w-full h-screen bg-[#B3A783] flex flex-col justify-center items-center' : 'hidden'}>
-        <li className="py-6 text-4xl ">Home</li>
-        <li className="py-6 text-4xl ">About</li>
-        <li className="py-6 text-4xl ">Skills</li>
-        <li className="py-6 text-4xl ">Projects</li>
-        <li className="py-6 text-4xl ">Contact</li>
+      <Link onClick={handleClick} smooth={true} duration={500} to='home' className=' py-6 text-4xl cursor-pointer rounded-xl '>Home</Link>
+        <Link onClick={handleClick} smooth={true} duration={500} to='about' className=' py-6 text-4xl cursor-pointer rounded-xl '>About</Link>
+        <Link onClick={handleClick} smooth={true} duration={500} to='skills' className=' py-6 text-4xl cursor-pointer rounded-xl '>Skills</Link>
+        <Link onClick={handleClick} smooth={true} duration={500} to='projects' className=' py-6 text-4xl cursor-pointer rounded-xl '>Projects</Link>
+        <Link onClick={handleClick} smooth={true} duration={500} to='contact' className=' py-6 text-4xl cursor-pointer rounded-xl '>Contact</Link>
       </ul>
 
       {/* social icons */}

@@ -11,14 +11,12 @@ const About = () => {
             </p>
           </div>
 
-          <div>hihihi</div>
+          <div></div>
         </div>
 
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-bold">
-            <p>
-              반갑습니다. 이정윤입니다. 
-            </p>
+            <p>반갑습니다. 이정윤입니다.</p>
             <p>여기는 자기 소개 페이지입니다.</p>
           </div>
           <div>
