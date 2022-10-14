@@ -23,6 +23,7 @@ const Home = () => {
           <button>
             <Link
               to="projects"
+              smooth={true} duration={500}
               className=" duration-300 group text-black border-2 px-6 py-3 my-2 flex items-center hover:bg-[#aecf52] shadow-lg"
             >
               View Projects

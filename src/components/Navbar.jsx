@@ -11,9 +11,10 @@ const Navbar = ({isToggleOn, handleClick}) => {
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#B3A783] text-white">
-      <div>
+      <Link to="home" className=' flex items-center cursor-pointer' smooth={true} duration={300}>
         <img src={Logo} alt="Logo" style={{ width: '65px' }} />
-      </div>
+        <span className=' text-white text-lg'>EnSillee</span>
+      </Link>
 
       {/* menu */}
       <ul className="hidden md:flex">
