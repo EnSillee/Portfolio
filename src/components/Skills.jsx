@@ -17,7 +17,7 @@ const Skills = () => {
         <div>
           <p className="pb-28 md:pb-0"></p>
           <p className="px-4 text-4xl font-bold ">Skills</p>
-          <p className="px-4 py-8">
+          <p className="px-4 py-6">
             These are the technologies I've worked with
           </p>
         </div>
