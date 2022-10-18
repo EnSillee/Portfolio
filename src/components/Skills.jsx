@@ -11,13 +11,13 @@ import Mongo from '../assets/mongo.png';
 
 const Skills = () => {
   return (
-    <div name="skills" className="w-full h-screen">
+    <div name="skills" className="w-full h-screen border-t-2">
       {/* Container */}
       <div className=" jua max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p className="pb-28 md:pb-0"></p>
           <p className="px-4 text-4xl font-bold ">Skills</p>
-          <p className="px-4 py-2">
+          <p className="px-4 py-8">
             These are the technologies I've worked with
           </p>
         </div>

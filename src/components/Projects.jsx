@@ -7,7 +7,7 @@ const Projects = ({ isToggleOn }) => {
   //setProject(data);
 
   return (
-    <div name="projects" className="w-full h-screen bg-white]">
+    <div name="projects" className="w-full h-screen bg-white] border-t-[1px]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="">
           <p className="pb-20 md:pb-0"></p>

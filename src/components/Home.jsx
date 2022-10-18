@@ -8,12 +8,12 @@ const Home = () => {
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center items-center h-full">
         <p className=" text-blue-300"></p>
-        <h1 className=" text-4xl sm:text-5xl font-bold text-[#3e5ec6]">
+        <h1 className=" text-3xl sm:text-4xl md:text-5xl font-bold text-[#3e5ec6]">
           <div className='mb-6 text-center'>개발 프로세스와 성능개선에 대해</div>
           {/* <div className='mb-6 text-center'>미션과 비전에 대해</div> */}
           <div className=' text-center'>고민하고 성장하는</div>
         </h1>
-        <h2 className=" text-4xl sm:text-5xl font-bold text-[#aecf52] pt-12">
+        <h2 className=" text-3xl sm:text-4xl md:text-5xl font-bold text-[#aecf52] pt-12">
           프론트엔드 개발자 이정윤 &nbsp;
           <span>
 
