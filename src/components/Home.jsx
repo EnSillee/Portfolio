@@ -1,35 +1,36 @@
 import React from 'react';
-import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
+// import background from '../assets/growth.png'
 
 const Home = () => {
   return (
-    <div name="home" className=" w-full h-screen bg-[#ffffff]">
+    <div name="home" className=" jua w-full h-screen bg-gradient-to-r from-cyan-100 to-blue-200">
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className=" text-blue-300">EnSillee</p>
-        <h1 className=" text-4xl sm:text-7xl font-bold text-[#3e5ec6]">
-          이 정 윤
+      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center items-center h-full">
+        <p className=" text-blue-300"></p>
+        <h1 className=" text-4xl sm:text-5xl font-bold text-[#3e5ec6]">
+          <div className='mb-6 text-center'>개발 프로세스와 성능개선에 대해</div>
+          {/* <div className='mb-6 text-center'>미션과 비전에 대해</div> */}
+          <div className=' text-center'>고민하고 성장하는</div>
         </h1>
-        <h2 className=" text-4xl sm:text-7xl font-bold text-[#aecf52]">
-          Front-End Developer.
+        <h2 className=" text-4xl sm:text-5xl font-bold text-[#aecf52] pt-12">
+          프론트엔드 개발자 이정윤 &nbsp;
+          <span>
+
+          입니다.
+          </span>
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          I’m a Front-End developer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building responsive full-stack web applications.
         </p>
         <div>
           <button>
             <Link
-              to="projects"
-              smooth={true} duration={500}
-              className=" duration-300 group text-black border-2 px-6 py-3 my-2 flex items-center hover:bg-[#aecf52] shadow-lg"
+              to="about"
+              smooth={true}
+              duration={200}
+              className=" text-2xl duration-300 group text-black border-2 border-white px-8 py-4 mt-12 flex items-center hover:bg-white hover:scale-110 shadow-lg"
             >
-              View Projects
-              <span className=" group-hover:rotate-90 duration-300">
-                <HiArrowNarrowRight className="ml-3" />
-              </span>
+              About Me
             </Link>
           </button>
         </div>
