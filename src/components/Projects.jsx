@@ -11,12 +11,12 @@ const Projects = ({ isToggleOn }) => {
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="">
           <p className="pb-20 md:pb-0"></p>
-          <p className="px-4  text-4xl font-bold">Projects</p>
-          <p className="py-2 px-4">Check out some of my recent Projects</p>
+          <p className="px-16 md:px-10 text-2xl md:text-4xl font-bold">Projects</p>
+          <p className="py-2 px-16 md:px-10 text-sm md:text-base">Check out some of my recent Projects</p>
         </div>
 
         {/* container for projects */}
-        <div className="grid  md:grid-cols-2 md:gap-4">
+        <div className="grid md:grid-cols-2 md:gap-4 md:px-10">
           {/* Gird Item */}
           {isToggleOn
             ? null
@@ -24,8 +24,8 @@ const Projects = ({ isToggleOn }) => {
                 <div
                   key={index}
                   style={{ backgroundImage: `url(${item.image})` }}
-                  className="shadow-lg shadow-[#040c16] group container rounded-md mb-8 md:mb-0
-                flex justify-center text-center items-center mx-auto content-div "
+                  className=" w-[80%] md:w-full shadow-lg shadow-[#040c16] group container rounded-md mb-8 md:mb-0
+                flex justify-center text-center items-center mx-auto content-div h-[200px] md:h-[250px]"
                 >
                   {/* Hover effect for images */}
                   <div className="opacity-0 group-hover:opacity-100 ">
