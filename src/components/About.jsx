@@ -6,15 +6,15 @@ const About = () => {
     <div name="about" className="w-full h-screen bg-white">
       <div className="flex flex-col justify-center items-center w-full h-full ">
         <div className="max-w-[620px] md:max-w-[1250px] w-full grid grid-cols-1 gap-8 mt-32 md:mt-20">
-          <div className=" jua mx-auto mb-6 text-3xl md:text-5xl md:pt-0">
+          <div className=" nanum font-bold mx-auto mb-6 text-3xl md:text-5xl md:pt-0">
             About Me
           </div>
         </div>
 
         <div className=" max-w-[620px] md:max-w-[1250px] w-full grid md:grid-cols-2 gap-8 px-4">
           
-          <div className=" sm:text-right text-4xl">
-            <span className=''>
+          <div className=" sm:text-right text-4xl my-auto">
+            <span className='mt-4'>
               <img
                 src={profileimg}
                 alt="profile"
@@ -23,7 +23,7 @@ const About = () => {
             </span>
           </div>
 
-          <div className='nanum'>
+          <div className='nanum mx-6 xs:mx-10 md:mr-20 lg:mr-12 xl:mr-8'>
             <p className=' mt-4 pb-3 md:pt-0 md:mt-8 text-xs sm:text-sm lg:text-xl'>
               Javascript 기반 풀 스택 부트캠프를 수료하고 2개의 팀 프로젝트를
               진행하면서 한 번은 프론트엔드, 한 번은 백엔드로 React, Redux,

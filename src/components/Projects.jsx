@@ -15,7 +15,7 @@ const Projects = ({ isToggleOn }) => {
             Projects
           </p>
           <p className="pt-2 pb-4 md:pb-6 md:py-2 px-16 md:px-10 text-sm md:text-base">
-            목표하는 가치를 실현하기 위해 4인의 팀원들과 개발한 프로젝트들을
+            목표하는 가치를 실현하기 위해 4인의 팀원들과 개발한 프로젝트들을 Github Wiki 페이지에
             정리했습니다.
           </p>
         </div>
