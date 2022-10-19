@@ -5,8 +5,8 @@ const About = () => {
   return (
     <div name="about" className="w-full h-screen bg-white">
       <div className="flex flex-col justify-center items-center w-full h-full ">
-        <div className="max-w-[620px] md:max-w-[1250px] w-full grid grid-cols-1 gap-8 mt-32">
-          <div className=" jua mx-auto mb-6 text-3xl md:text-5xl inline border-b-4 border-green-300  md:pt-0">
+        <div className="max-w-[620px] md:max-w-[1250px] w-full grid grid-cols-1 gap-8 mt-32 md:mt-20">
+          <div className=" jua mx-auto mb-6 text-3xl md:text-5xl md:pt-0">
             About Me
           </div>
         </div>
@@ -18,7 +18,7 @@ const About = () => {
               <img
                 src={profileimg}
                 alt="profile"
-                className=" mx-auto w-[12rem] sm:w-[15rem] md:w-[18rem] lg:w-[24rem] "
+                className=" mx-auto w-[12rem] sm:w-[15rem] md:w-[18rem] lg:w-[20rem] "
               />
             </span>
           </div>
