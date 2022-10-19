@@ -30,7 +30,7 @@ const Projects = ({ isToggleOn }) => {
                   key={index}
                   style={{ backgroundImage: `url(${item.image})` }}
                   className=" w-[80%] md:w-full shadow-lg shadow-[#040c16] group container rounded-md mb-8 md:mb-0
-                flex justify-center text-center items-center mx-auto content-div h-[200px] md:h-[250px]"
+                flex justify-center text-center items-center mx-auto content-div h-[180px] sm:h-[200px] md:h-[250px]"
                 >
                   {/* Hover effect for images */}
                   <div className="opacity-0 group-hover:opacity-100 ">
@@ -49,8 +49,8 @@ const Projects = ({ isToggleOn }) => {
                         rel="noopenner noreferrer"
                       >
                         <button
-                          className="text-center rounded-lg px-4 py-3 m-2
-                         bg-white text-gray-700 font-bold text-sm md:text-lg"
+                          className="text-center rounded-lg px-3 xs:px-4 py-3 m-2
+                         bg-white text-gray-700 font-bold text-xs xs:text-sm md:text-lg"
                         >
                           코드
                         </button>
@@ -62,8 +62,8 @@ const Projects = ({ isToggleOn }) => {
                         rel="noopenner noreferrer"
                       >
                         <button
-                          className="text-center rounded-lg px-4 py-3 m-2
-                         bg-white text-gray-700 font-bold text-sm md:text-lg"
+                          className="text-center rounded-lg px-3 xs:px-4 py-3 m-2
+                         bg-white text-gray-700 font-bold text-xs xs:text-sm md:text-lg"
                         >
                           배포 
                         </button>
@@ -75,8 +75,8 @@ const Projects = ({ isToggleOn }) => {
                         rel="noopenner noreferrer"
                       >
                         <button
-                          className="text-center rounded-lg px-4 py-3 m-2
-                         bg-white text-gray-700 font-bold text-sm md:text-lg"
+                          className="text-center rounded-lg px-3 xs:px-4 py-3 m-2
+                         bg-white text-gray-700 font-bold text-xs xs:text-sm md:text-lg"
                         >
                           위키
                         </button>
@@ -88,8 +88,8 @@ const Projects = ({ isToggleOn }) => {
                         rel="noopenner noreferrer"
                       >
                         <button
-                          className="text-center rounded-lg px-4 py-3 m-2
-                         bg-white text-gray-700 font-bold text-sm md:text-lg"
+                          className="text-center rounded-lg px-3 xs:px-4 py-3 m-2
+                         bg-white text-gray-700 font-bold text-xs xs:text-sm md:text-lg"
                         >
                           회고
                         </button>

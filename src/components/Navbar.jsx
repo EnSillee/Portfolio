@@ -195,10 +195,10 @@ const Navbar = ({ isToggleOn, handleClick, currentPage }) => {
       </div>
 
       {isToggleOn || currentScrollY < 100 ? null : (
-        <div className="fixed bottom-5 right-5 md:bottom-12 xs:right-10 sm:right-16 md:right-20 text-black z-10">
+        <div className="fixed bottom-5 xs:bottom-8 md:bottom-12 right-[0.625rem] xs:right-6 sm:right-8 md:right-10 text-black">
           <Link to="home" smooth={true} duration={200}>
             <FaArrowAltCircleUp
-              className=" cursor-pointer text-3xl md:text-4xl"
+              className=" cursor-pointer text-2xl md:text-3xl lg:text-4xl"
               color="gray"
             />
           </Link>
