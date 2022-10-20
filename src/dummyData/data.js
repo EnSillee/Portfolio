@@ -1,5 +1,5 @@
-import WorkIm from '../assets/projects/workImg.jpeg'
-import RealEst from '../assets/projects/realestate.jpg'
+import DogGain from '../assets/projects/doggain.png'
+import JoopJoop from '../assets/projects/joopjoop.png'
 
 export const data=[
     {
@@ -7,7 +7,7 @@ export const data=[
         name:"JoopJoop (줍줍)",
         value:"친환경",
         content:"친환경을 위해 다른 사람들과 함께 플로깅 모임을 오프라인으로 할 수 있게 해주는 플랫폼입니다.",
-        image:WorkIm,
+        image:JoopJoop,
         github:"https://github.com/codestates/JoopJoop",
         live:"https://www.joopjoop.site",
         wiki:"https://github.com/codestates/JoopJoop/wiki",
@@ -18,7 +18,7 @@ export const data=[
         name:"DogGain (개이득)",
         value:"핫딜 정보공유",
         content:"실시간 핫딜 정보를 공유하는 플랫폼입니다.",
-        image:RealEst,
+        image:DogGain,
         github:"https://github.com/codestates/DogGain/",
         live:"",
         wiki:"https://github.com/codestates/DogGain/wiki",
