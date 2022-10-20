@@ -11,7 +11,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className=" max-w-[620px] md:max-w-[1250px] w-full grid md:grid-cols-2 gap-8 px-4">
+        <div className=" max-w-[620px] md:max-w-[1250px] w-full grid md:grid-cols-2 gap-4 sm:gap-8 px-4">
           
           <div className=" sm:text-right text-4xl my-auto">
             <span className='mt-4'>

@@ -8,13 +8,13 @@ const Projects = ({ isToggleOn }) => {
 
   return (
     <div name="projects" className="w-full h-screen bg-white] border-t-[1px]">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1050px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="">
           <p className="pb-20 md:pb-0"></p>
-          <p className="px-16 md:px-10 text-2xl md:text-4xl font-bold">
+          <p className="px-10 xs:px-14 sm:px-16 md:px-10 text-2xl md:text-4xl font-bold">
             Projects
           </p>
-          <p className="pt-2 pb-4 md:pb-6 md:py-2 px-16 md:px-10 text-sm md:text-base">
+          <p className="pt-2 pb-4 md:pb-6 md:py-2 px-10 xs:px-14 sm:px-16 md:px-10 text-sm md:text-base">
             목표하는 가치를 실현하기 위해 4인의 팀원들과 개발한 프로젝트들을 Github Wiki 페이지에
             정리했습니다.
           </p>
@@ -29,7 +29,7 @@ const Projects = ({ isToggleOn }) => {
                 <div
                   key={index}
                   style={{ backgroundImage: `url(${item.image})` }}
-                  className=" w-[80%] md:w-full shadow-lg shadow-[#040c16] group container rounded-md mb-8 md:mb-0
+                  className=" w-[80%] md:w-full shadow-lg shadow-[#040c16] group container rounded-md mb-4 sm:mb-8 md:mb-12
                 flex justify-center text-center items-center mx-auto content-div h-[180px] sm:h-[200px] md:h-[250px]"
                 >
                   {/* Hover effect for images */}
