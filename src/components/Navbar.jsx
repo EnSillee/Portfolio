@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FaBars, FaTimes, FaGithub, FaArrowAltCircleUp } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { DiTravis } from 'react-icons/di';
 import Logo from '../assets/logo2.png';
-import Resume from '../assets/resume.pdf';
 import { Link } from 'react-scroll';
 
 const Navbar = ({ isToggleOn, handleClick, currentPage }) => {
@@ -178,16 +176,6 @@ const Navbar = ({ isToggleOn, handleClick, currentPage }) => {
                 rel="noopenner noreferrer"
               >
                 Email <HiOutlineMail size={30} />
-              </a>
-            </li>
-            <li className="rounded-xl w-[160px] h-[60px] flex justify-between items-center ml-[-103px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-              <a
-                className="flex justify-between items-center w-full"
-                href={Resume}
-                target="_blank"
-                rel="noopenner noreferrer"
-              >
-                Resume <BsFillPersonLinesFill size={30} />
               </a>
             </li>
           </ul>
