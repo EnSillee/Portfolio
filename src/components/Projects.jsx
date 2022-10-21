@@ -2,7 +2,6 @@ import React from 'react';
 import { data } from '../dummyData/data.js';
 
 const Projects = ({ isToggleOn }) => {
-
   // projects file
   const project = data;
   //setProject(data);
@@ -16,8 +15,8 @@ const Projects = ({ isToggleOn }) => {
             Projects
           </p>
           <p className="pt-2 pb-4 md:pb-6 md:py-2 px-10 xs:px-14 sm:px-16 md:px-10 text-sm md:text-base text-center md:text-left">
-            목표하는 가치를 실현하기 위해 4인의 팀원들과 개발한 프로젝트들을 Github Wiki 페이지에
-            정리했습니다.
+            목표하는 가치를 실현하기 위해 4인의 팀원들과 개발한 프로젝트들을
+            Github Wiki 페이지에 정리했습니다.
           </p>
         </div>
 
@@ -57,18 +56,20 @@ const Projects = ({ isToggleOn }) => {
                         </button>
                       </a>
                       {/* eslint-disable-next-line */}
-                      <a
-                        href={item.live}
-                        target="_blank"
-                        rel="noopenner noreferrer"
-                      >
-                        <button
-                          className="text-center rounded-lg px-3 xs:px-4 py-3 m-2
-                         bg-white text-gray-700 font-bold text-xs xs:text-sm md:text-lg"
+                      {item.live === '' ? null : (
+                        <a
+                          href={item.live}
+                          target="_blank"
+                          rel="noopenner noreferrer"
                         >
-                          배포 
-                        </button>
-                      </a>
+                          <button
+                            className="text-center rounded-lg px-3 xs:px-4 py-3 m-2
+                         bg-white text-gray-700 font-bold text-xs xs:text-sm md:text-lg"
+                          >
+                            배포
+                          </button>
+                        </a>
+                      )}
                       {/* eslint-disable-next-line */}
                       <a
                         href={item.wiki}
