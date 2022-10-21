@@ -1,7 +1,7 @@
 import DogGain from '../assets/projects/doggain.png'
 import JoopJoop from '../assets/projects/joopjoop.png'
 
-export const data=[
+export const projectData=[
     {
         id:1,
         name:"JoopJoop (줍줍)",

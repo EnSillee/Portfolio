@@ -1,9 +1,9 @@
 import React from 'react';
-import { data } from '../dummyData/data.js';
+import { projectData } from '../dummyData/projectData.js';
 
 const Projects = ({ isToggleOn }) => {
   // projects file
-  const project = data;
+  
   //setProject(data);
 
   return (
@@ -25,26 +25,26 @@ const Projects = ({ isToggleOn }) => {
           {/* Gird Item */}
           {isToggleOn
             ? null
-            : project.map((item, index) => (
+            : projectData.map((project) => (
                 <div
-                  key={index}
-                  style={{ backgroundImage: `url(${item.image})` }}
+                  key={project.id}
+                  style={{ backgroundImage: `url(${project.image})` }}
                   className=" w-[80%] md:w-full shadow-lg shadow-[#040c16] group container rounded-md mb-4 sm:mb-8 md:mb-12
                 flex justify-center text-center items-center mx-auto content-div h-[180px] sm:h-[200px] md:h-[250px]"
                 >
                   {/* Hover effect for images */}
                   <div className="opacity-0 group-hover:opacity-100 ">
                     <span className="mt-2 text-2xl font-bold text-white tracking-wider ">
-                      {item.name}
+                      {project.name}
                     </span>
                     {/* <span className=' text-white'>{item.value}</span> */}
                     <p className=" mt-2 text-sm font-bold text-white tracking-wider max-w-xs ">
-                      {item.content}
+                      {project.content}
                     </p>
                     <div className="pt-4 text-center ">
                       {/* eslint-disable-next-line */}
                       <a
-                        href={item.github}
+                        href={project.github}
                         target="_blank"
                         rel="noopenner noreferrer"
                       >
@@ -56,9 +56,9 @@ const Projects = ({ isToggleOn }) => {
                         </button>
                       </a>
                       {/* eslint-disable-next-line */}
-                      {item.live === '' ? null : (
+                      {project.live === '' ? null : (
                         <a
-                          href={item.live}
+                          href={project.live}
                           target="_blank"
                           rel="noopenner noreferrer"
                         >
@@ -72,7 +72,7 @@ const Projects = ({ isToggleOn }) => {
                       )}
                       {/* eslint-disable-next-line */}
                       <a
-                        href={item.wiki}
+                        href={project.wiki}
                         target="_blank"
                         rel="noopenner noreferrer"
                       >
@@ -85,7 +85,7 @@ const Projects = ({ isToggleOn }) => {
                       </a>
                       {/* eslint-disable-next-line */}
                       <a
-                        href={item.dev}
+                        href={project.dev}
                         target="_blank"
                         rel="noopenner noreferrer"
                       >
