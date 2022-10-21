@@ -2,6 +2,7 @@ import React from 'react';
 import { data } from '../dummyData/data.js';
 
 const Projects = ({ isToggleOn }) => {
+
   // projects file
   const project = data;
   //setProject(data);
@@ -11,10 +12,10 @@ const Projects = ({ isToggleOn }) => {
       <div className="max-w-[1050px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="">
           <p className="pb-20 md:pb-0"></p>
-          <p className="px-10 xs:px-14 sm:px-16 md:px-10 text-2xl md:text-4xl font-bold">
+          <p className=" nanum px-10 xs:px-14 sm:px-16 md:px-10 text-3xl md:text-5xl font-bold text-center md:text-left">
             Projects
           </p>
-          <p className="pt-2 pb-4 md:pb-6 md:py-2 px-10 xs:px-14 sm:px-16 md:px-10 text-sm md:text-base">
+          <p className="pt-2 pb-4 md:pb-6 md:py-2 px-10 xs:px-14 sm:px-16 md:px-10 text-sm md:text-base text-center md:text-left">
             목표하는 가치를 실현하기 위해 4인의 팀원들과 개발한 프로젝트들을 Github Wiki 페이지에
             정리했습니다.
           </p>

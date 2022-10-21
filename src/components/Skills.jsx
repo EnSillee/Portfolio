@@ -14,7 +14,7 @@ const Skills = () => {
       <div className="  max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p className="pb-20 md:pb-0"></p>
-          <p className=" text-3xl md:text-4xl text-center md:text-start px-4 md:px-12 font-bold ">Skills</p>
+          <p className=" nanum text-3xl md:text-5xl text-center md:text-start px-4 md:px-12 font-bold ">Skills</p>
           <p className=" pt-8 pb-4 w-[90%] mx-auto md:mx-0 text-sm md:text-base text-center md:text-start px-4 md:px-12 py-1 md:py-4">
             프로젝트를 진행하면서 사용해본 경험이 있고 소스코드를 이해할 수 있는 기술 스택입니다.
           </p>

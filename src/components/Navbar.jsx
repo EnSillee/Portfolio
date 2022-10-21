@@ -30,7 +30,7 @@ const Navbar = ({ isToggleOn, handleClick, currentPage }) => {
 
   return (
     <>
-      <div className=" jua fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#4485F5] text-white">
+      <div className=" jua fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#4485F5] text-white z-10">
         <Link
           to="home"
           className=" flex items-center cursor-pointer ml-0 lg:ml-32"
