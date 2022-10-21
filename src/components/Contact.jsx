@@ -20,16 +20,18 @@ const Contact = () => {
             Contact
           </p>
           <p className="px-1 pt-2 md:pt-1 text-xs md:text-base text-center md:text-left text-white md:text-black">
-            <span className=' hidden md:block '>아래 양식으로 제안을 주시거나 </span>
+            <span className=" hidden md:block ">
+              아래 양식으로 제안을 주시거나{' '}
+            </span>
             <a
               href="mailto:ensillee22@gmail.com"
               target="_blank"
               rel="noopenner noreferrer"
-              className='hidden md:inline text-white md:text-blue-500'
+              className="hidden md:inline text-white md:text-blue-500"
             >
               ensillee22@gmail.com
             </a>
-            <span className='hidden md:inline'>로 이메일을 보내주세요.</span>
+            <span className="hidden md:inline">로 이메일을 보내주세요.</span>
           </p>
         </div>
 
@@ -57,18 +59,42 @@ const Contact = () => {
         </button>
       </form>
 
-      <div className=' md:hidden w-full flex justify-center'>
-        <span className='mx-4'><FaGithub size={35} className=" text-white hover:text-blue-300" /></span>
-        <span className='mx-4'><DiTravis size={35} className=" text-white hover:text-blue-300" /></span>
-        <span className='mx-4'><HiOutlineMail size={40} className=" text-white hover:text-blue-300" /></span>
+      <div className=" md:hidden w-full flex justify-center">
+        <a
+          href="https://github.com/EnSillee"
+          target="_blank"
+          rel="noopenner noreferrer"
+          className="mx-4"
+        >
+          <FaGithub size={35} className=" text-white hover:text-blue-300" />
+        </a>
+        <a
+          href="https://engelsmile.tistory.com/"
+          target="_blank"
+          rel="noopenner noreferrer"
+          className="mx-4"
+        >
+          <DiTravis size={35} className=" text-white hover:text-blue-300" />
+        </a>
+        <a
+          href="mailto:ensillee22@gmail.com"
+          target="_blank"
+          rel="noopenner noreferrer"
+          className="mx-4"
+        >
+          <HiOutlineMail
+            size={40}
+            className=" text-white hover:text-blue-300"
+          />
+        </a>
       </div>
 
-    <div className=' w-full flex flex-col items-center mt-4 text-white text-xs'>
-
-    <div className=''>ⓒ 2022. Ensillee.  All right reserved.</div>
-    <div className=''>본 사이트는 개인 포트폴리오 사이트 목적으로 제작되었습니다.</div>
-    </div>
-
+      <div className=" w-full flex flex-col items-center mt-4 text-white md:text-gray-500 text-xs">
+        <div className="">ⓒ 2022. Ensillee. All right reserved.</div>
+        <div className="">
+          본 사이트는 개인 포트폴리오 사이트 목적으로 제작되었습니다.
+        </div>
+      </div>
     </div>
   );
 };
